@@ -2,7 +2,7 @@
 session_start();
 
 // Lista de palabras para el juego
-$palabras = ['elefante', 'jirafa', 'hipopotamo', 'rinoceronte', 'cocodrilo', 'camello', 'chimpance'];
+$palabras = ['gato','ratón','perro','elefante', 'jirafa', 'hipopotamo', 'rinoceronte', 'cocodrilo', 'camello', 'chimpance'];
 
 // Inicializar el juego
 if (!isset($_SESSION['palabra'])) {
@@ -38,14 +38,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['letra'])) {
 
 // Comprobar si se ha ganado o perdido
 if ($_SESSION['letras_acertadas'] == $_SESSION['palabra']) {
-    echo "¡Enhorabuena! Has ganado :) La palabra era: " . $_SESSION['palabra'] . "<br>";
-    session_destroy();
-    echo '<a href="">Jugar de nuevo</a>';
+    header("Location: ganar.php");
     exit();
 } elseif ($_SESSION['vidas'] <= 0) {
-    echo "Lo siento, has perdido :( La palabra era: " . $_SESSION['palabra'] . "<br>";
-    session_destroy();
-    echo '<a href="">Jugar de nuevo</a>';
+    header("Location: perder.php");
     exit();
 }
 ?>
@@ -68,10 +64,6 @@ if ($_SESSION['letras_acertadas'] == $_SESSION['palabra']) {
         <button type="submit">Adivinar</button>
     </form>
     <p>Letras usadas: <?php echo implode(', ', $_SESSION['letras_usadas']); ?></p>
-    <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 2px solid #e0e0e0;">
-        <a href="instrucciones.php"><button type="button">📝 Instrucciones</button></a>
-        <a href="acerca.php"><button type="button">ℹ️ Acerca de</button></a>
-    </div>
     </div>
 </body>
 </html>
