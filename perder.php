@@ -111,7 +111,6 @@
 </head>
 <body>
     <div class="container">
-        <div class="emoji">😢</div>
         <h1>GAME OVER</h1>
         <p>¡Oh no! Te has quedado sin intentos</p>
         
@@ -124,10 +123,10 @@
         ?>
         
         <div class="mensaje-animo">
-            💪 ¡No te rindas! La práctica hace al maestro
+            ¡No te rindas! La práctica hace al maestro
         </div>
         
-        <a href="index.php"><button>🔄 Intentar de Nuevo</button></a>
+        <a href="index.php"><button>Intentar de Nuevo</button></a>
     </div>
 </body>
 </html>

@@ -101,7 +101,6 @@
 </head>
 <body>
     <div class="container">
-        <div class="emoji">🎉</div>
         <h1>¡FELICIDADES!</h1>
         <p>Has adivinado la palabra correctamente</p>
         
@@ -112,9 +111,9 @@
         }
         ?>
         
-        <p>¡Eres todo un maestro del ahorcado! 🏆</p>
+        <p>¡Eres todo un maestro del ahorcado! </p>
         
-        <a href="index.php"><button>🎮 Jugar de Nuevo</button></a>
+        <a href="index.php"><button>Jugar de Nuevo</button></a>
     </div>
 </body>
 </html>
