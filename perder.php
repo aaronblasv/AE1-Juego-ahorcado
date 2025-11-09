@@ -1,3 +1,11 @@
+<?php
+        session_start();
+        if(isset($_SESSION['palabra'])) {
+            echo '<p>La palabra era:</p>';
+            echo '<div class="palabra-correcta">' . strtoupper($_SESSION['palabra']) . '</div>';
+        }
+        ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -113,15 +121,6 @@
     <div class="container">
         <h1>GAME OVER</h1>
         <p>¡Oh no! Te has quedado sin intentos</p>
-        
-        <?php
-        session_start();
-        if(isset($_SESSION['palabra'])) {
-            echo '<p>La palabra era:</p>';
-            echo '<div class="palabra-correcta">' . strtoupper($_SESSION['palabra']) . '</div>';
-        }
-        ?>
-        
         <div class="mensaje-animo">
             ¡No te rindas! La práctica hace al maestro
         </div>
