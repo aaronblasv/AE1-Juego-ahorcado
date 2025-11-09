@@ -68,6 +68,10 @@ if ($_SESSION['letras_acertadas'] == $_SESSION['palabra']) {
         <button type="submit">Adivinar</button>
     </form>
     <p>Letras usadas: <?php echo implode(', ', $_SESSION['letras_usadas']); ?></p>
+    <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 2px solid #e0e0e0;">
+        <a href="instrucciones.php"><button type="button">📝 Instrucciones</button></a>
+        <a href="acerca.php"><button type="button">ℹ️ Acerca de</button></a>
+    </div>
     </div>
 </body>
 </html>
