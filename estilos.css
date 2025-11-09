@@ -30,3 +30,79 @@ h1 {
     font-size: 2.5em;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
+
+.palabra {
+    font-size: 2.5em;
+    text-align: center;
+    letter-spacing: 15px;
+    margin: 30px 0;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+
+form {
+    text-align: center;
+    margin: 25px 0;
+}
+
+label {
+    font-size: 1.2em;
+    color: #555;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 12px 15px;
+    font-size: 1.3em;
+    border: 3px solid #667eea;
+    border-radius: 8px;
+    width: 80px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #764ba2;
+    box-shadow: 0 0 10px rgba(102, 126, 234, 0.3);
+    transform: scale(1.05);
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.info {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    color: #555;
+}
+
+.intentos {
+    color: #e74c3c;
+    font-weight: bold;
+}
